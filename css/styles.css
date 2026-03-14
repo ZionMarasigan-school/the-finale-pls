@@ -1,0 +1,59 @@
+/* REQUIREMENT: CSS Gradients (Background) */
+body {
+    background: linear-gradient(to bottom, #ffffff, #ffe6f2);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+/* REQUIREMENT: CSS Shadows & Rounded Corners */
+header {
+    background-color: #ff80bf;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2); /* Shadow */
+    border-radius: 0px 0px 20px 20px; /* Rounded bottom corners */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Style for the welcome section */
+.welcome-text {
+    margin: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px; /* Rounded Corners */
+    box-shadow: 5px 5px 15px #ccc; /* Shadow */
+}
+
+/* Fix the Carousel Height */
+.carousel-item {
+    height: 500px; /* Adjust this number to make it taller or shorter */
+    background-color: #333; /* Adds a dark background if the photo is small */
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* This is the "magic" line: it crops the image to fit without stretching it */
+}
+
+/* Make the Header text easier to read */
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.4); /* Adds a subtle dark tint behind the text */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.table-pink {
+    background-color: #ffb6c1;
+    color: #444;
+}
