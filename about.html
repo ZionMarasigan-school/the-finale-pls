@@ -2,34 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
     <title>About Us | Flowerama of Plano</title>
+	
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+	
 </head>
+
 <body>
 
-    <header>
-        <h1>Flowerama of Plano</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Us</a> | 
-            <a href="gallery.html">Gallery</a> | 
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <header style="background-color: #ff80bf; padding: 30px 0; text-align: center; color: white;">
+    <h1 style="color: #2c3e50; font-family: sans-serif; margin-bottom: 15px;">Flowerama of Plano</h1>
+    
+    <nav>
+        <ul style="list-style: none; padding: 0; display: inline-flex; align-items: center; gap: 10px;">
+            <li><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+            <li style="color: white;">|</li>
+            <li><a href="about.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
+            <li style="color: white;">|</li>
+            <li class="dropdown">
+				<a class="dropdown-toggle" href="gallery.html" id="galleryDrop" data-bs-toggle="dropdown" 
+				style="color: white; text-decoration: none; font-weight: bold;">Gallery</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="gallery.html">Gallery Top</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="gallery.html#white">"White" Arrangements</a></li>
+					<li><a class="dropdown-item" href="gallery.html#color">"Colorful" Arrangements</a></li>
+					<li><a class="dropdown-item" href="gallery.html#dog">Something... special!?</a></li>
+				</ul>
+			</li>
+            <li style="color: white;">|</li>
+            <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+        </ul>
+    </nav>
+	</header>
+
 
     <main class="container my-5 text-center">
         <h2>Our Story</h2>
-        <p class="lead">Flowerama of Plano offers the best flower arrangements and gifts in Plano, TX! Our professional florists can help you find the perfect flowers for any individual or occasion and can even create a custom bouquet to fit your unique needs while you wait. Flowerama of Plano delivers flower arrangements throughout Plano, Allen, Richardson, McKinney, Lucas, Parker and Fairview and offers same-day delivery for your last-minute gift needs! Flowerama of Plano can also deliver quality flowers nationwide through our trusted florist network.
+        <p class="lead">Flowerama of Plano offers the best flower arrangements and gifts in Plano, TX! Our professional florists can help you find the perfect flowers for any individual or occasion and can even create a custom bouquet to fit your unique needs while you wait. Flowerama of Plano delivers flower arrangements throughout Plano, Allen, Richardson, McKinney, Lucas, Parker and Fairview and offers same-day delivery for your last-minute gift needs! Flowerama of Plano can also deliver quality flowers nationwide through our trusted florist network.</p>
 
-You can trust Flowerama of Plano for your local or nationwide floral needs. Our floral designers fulfill orders via our website or over the phone for your convenience. If you are looking for the most beautiful, budget-friendly bouquets in Plano, look no further. Flowerama of Plano has floral arrangements and gift baskets to fit your needs. Our expert florists can even create personalized gifts to make any occasion extra special.</p>
+		<p class="lead">You can trust Flowerama of Plano for your local or nationwide floral needs. Our floral designers fulfill orders via our website or over the phone for your convenience. If you are looking for the most beautiful, budget-friendly bouquets in Plano, look no further. Flowerama of Plano has floral arrangements and gift baskets to fit your needs. Our expert florists can even create personalized gifts to make any occasion extra special.</p>
         
         <div class="row mt-5">
             <div class="col-md-6 offset-md-3">
-                <!-- REQUIREMENT 4: TABLE -->
+
                 <h3 class="mb-3">Store Hours</h3>
                 <table class="table table-bordered shadow-sm">
-                    <thead class="table-pink"> <!-- We can style this in CSS -->
+                    <thead class="table-pink">
                         <tr>
                             <th>Day</th>
                             <th>Hours</th>
@@ -43,12 +65,33 @@ You can trust Flowerama of Plano for your local or nationwide floral needs. Our 
                 </table>
             </div>
         </div>
+		
+	<div class="mt-5 pt-5 border-top text-center">
+		<p class="text-muted" style="font-size: 1.2rem;"><i>
+		<img src="images/snow-pink.gif" 
+         alt="Wind-swaying flowers." 
+         style="width: 250px; height: auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
+         class="mb-3">
+		"Always blooming for you." (Note: The animated flowers is NOT part of the shop.)</i></p>
+	</div>
+	
     </main>
 
     <footer>
-        <p>Site Map: <a href="index.html">Home</a> | <a href="about.html">About</a></p>
+	
         <p>Developed by: <strong>Carrot!!</strong></p>
+		<div class="site-map">
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="gallery.html">Gallery</a> | 
+        <a href="contact.html">Contact</a>
+		</div>
+		<p><i>Note: This is used merely for a school project, "Flowerama in Plano" already has a site of their own, and this should and must NOT replace that in any way.</i></p>
+		
     </footer>
 
+	<script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

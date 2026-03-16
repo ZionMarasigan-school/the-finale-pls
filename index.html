@@ -8,8 +8,6 @@
 	
 	<title>Flowerama of Plano | Home</title>
 	
-
-	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
 		
@@ -17,42 +15,53 @@
 
 <body>
 
-    <header>
-	
-        <h1>Flowerama of Plano</h1>
-        
-        <!-- Navigation Menu -->
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Us</a> | 
-            <a href="gallery.html">Gallery</a> | 
-            <a href="contact.html">Contact</a>
-        </nav>
-		
-    </header>
+    <header style="background-color: #ff80bf; padding: 30px 0; text-align: center; color: white;">
+    <h1 style="color: #2c3e50; font-family: sans-serif; margin-bottom: 15px;">Flowerama of Plano</h1>
+    
+    <nav>
+        <ul style="list-style: none; padding: 0; display: inline-flex; align-items: center; gap: 10px;">
+            <li><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+            <li style="color: white;">|</li>
+            <li><a href="about.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
+            <li style="color: white;">|</li>
+            <li class="dropdown">
+				<a class="dropdown-toggle" href="gallery.html" id="galleryDrop" data-bs-toggle="dropdown" 
+				style="color: white; text-decoration: none; font-weight: bold;">Gallery</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="gallery.html">Gallery Top</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="gallery.html#white">"White" Arrangements</a></li>
+					<li><a class="dropdown-item" href="gallery.html#color">"Colorful" Arrangements</a></li>
+					<li><a class="dropdown-item" href="gallery.html#dog">Something... special!?</a></li>
+				</ul>
+			</li>
+            <li style="color: white;">|</li>
+            <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+        </ul>
+    </nav>
+	</header>
+
 
     <main>
     <div class="container my-5"> 
         <div id="flowerCarousel" class="carousel slide shadow" data-bs-ride="carousel">
             <div class="carousel-inner" style="border-radius: 20px;"> 
                 
-                <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <img src="images/flower-place.png" class="d-block w-100" alt="Shop Front">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Just outside the shop!</h5>
-                        <p>1151 W Parker Rd Suite 200 Plano TX, TX 75023.</p>
-                    </div> <!-- Added missing closing div for caption -->
-                </div> <!-- Added missing closing div for carousel-item -->
+                        <p>Located at: 1151 W Parker Rd Suite 200 Plano TX, TX 75023.</p>
+                    </div>
+                </div>
 
-                <!-- Slide 2 -->
                 <div class="carousel-item">
                     <img src="images/gift-shop.png" class="d-block w-100" alt="Gift Shop">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Inside the shop.</h5>
                         <p>Specifically, the gift shop section.</p>
-                    </div> <!-- Added missing closing div for caption -->
-                </div> <!-- Added missing closing div for carousel-item -->
+                    </div>
+                </div>
             </div>
             
             <button class="carousel-control-prev" type="button" data-bs-target="#flowerCarousel" data-bs-slide="prev">
@@ -61,21 +70,51 @@
             <button class="carousel-control-next" type="button" data-bs-target="#flowerCarousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: rgba(0,0,0,0.5); border-radius: 50%;"></span>
             </button>
+			
         </div>
     </div> 
+	
+	<img src="images/icons.png" usemap="#iconmap" width="1000" height="500" alt="Self-Drawn Icons..." class="img-fluid">
+
+<map name="iconmap">
+
+  <area shape="rect" coords="40,230,285,650" alt="About Us" href="about.html">
+  <area shape="rect" coords="390,40,580,660" alt="Gallery" href="gallery.html">
+  <area shape="rect" coords="710,240,970,660" alt="Dog Gallery" href="gallery.html#dog">
+  
+</map>
 
     <section class="welcome-text py-5 my-5 shadow-sm">
         <h2>Fresh Flowers for Every Occasion</h2>
         <p>Welcome to our family-owned shop in Plano, TX. We've been making people smile with flowers since 1990!</p>
     </section>
+	
+	<div class="mt-5 pt-5 border-top text-center">
+		<p class="text-muted" style="font-size: 1.2rem;"><i>
+		<img src="images/snow-pink.gif" 
+         alt="Wind-swaying flowers." 
+         style="width: 250px; height: auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
+         class="mb-3">
+		"Always blooming for you." (Note: The animated flowers is NOT part of the shop.)</i></p>
+	</div>
+
 </main>
 
     <footer>
 	
-        <p>Site Map: <a href="index.html">Home</a> | <a href="about.html">About</a></p>
         <p>Developed by: <strong>Carrot!!</strong></p>
+		<div class="site-map">
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="gallery.html">Gallery</a> | 
+        <a href="contact.html">Contact Us!</a>
+		</div>
+		<p><i>Note: This is used merely for a school project, "Flowerama in Plano" already has a site of their own, and this should and must NOT replace that in any way.</i></p>
+		
     </footer>
 	
 	<script src="js/bootstrap.bundle.min.js"></script>
 
-</body>	
+</body>
+
+</html>

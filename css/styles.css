@@ -1,4 +1,3 @@
-/* REQUIREMENT: CSS Gradients (Background) */
 body {
     background: linear-gradient(to bottom, #ffffff, #ffe6f2);
     font-family: Arial, sans-serif;
@@ -6,12 +5,11 @@ body {
     text-align: center;
 }
 
-/* REQUIREMENT: CSS Shadows & Rounded Corners */
 header {
     background-color: #ff80bf;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2); /* Shadow */
-    border-radius: 0px 0px 20px 20px; /* Rounded bottom corners */
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    border-radius: 0px 0px 20px 20px;
 }
 
 nav a {
@@ -21,34 +19,31 @@ nav a {
     padding: 10px;
 }
 
-/* Style for the welcome section */
 .welcome-text {
     margin: 40px;
     padding: 20px;
     background: white;
-    border-radius: 15px; /* Rounded Corners */
-    box-shadow: 5px 5px 15px #ccc; /* Shadow */
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #ccc;
 }
 
-/* Fix the Carousel Height */
 .carousel-item {
-    height: 500px; /* Adjust this number to make it taller or shorter */
-    background-color: #333; /* Adds a dark background if the photo is small */
+    height: 500px;
+    background-color: #333;
 }
 
 .carousel-item img {
     height: 100%;
-    object-fit: cover; /* This is the "magic" line: it crops the image to fit without stretching it */
+    object-fit: cover;
 }
 
-/* Make the Header text easier to read */
 header h1 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.4); /* Adds a subtle dark tint behind the text */
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 10px;
 }
@@ -56,4 +51,70 @@ header h1 {
 .table-pink {
     background-color: #ffb6c1;
     color: #444;
+}
+
+.gallery-img {
+    opacity: 0.85;
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+
+.gallery-img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.animated-badge {
+    float: right;
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 2px solid #ffb6c1;
+}
+
+a[href^="http"] {
+    font-style: italic;
+    color: #ff40a0;
+}
+
+input, input[type="email"], textarea {
+    border: 2px solid #ffb3d9;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff80bf;
+    box-shadow: 0 0 8px rgba(255, 128, 191, 0.5);
+}
+
+.btn-custom {
+    background: linear-gradient(to right, #ff80bf, #ffb3d9);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-custom:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.map-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
 }

@@ -2,19 +2,267 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>placeholderrrrrrrrrr</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <title>Flower Gallery | Flowerama of Plano</title>
+	
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+	
 </head>
 
-<body><header>
-        <h1>Flowerama of Plano</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Us</a> | 
-            <a href="gallery.html">Gallery</a> | 
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<body>
+
+    <header style="background-color: #ff80bf; padding: 30px 0; text-align: center; color: white;">
+    <h1 style="color: #2c3e50; font-family: sans-serif; margin-bottom: 15px;">Flowerama of Plano</h1>
+    
+    <nav>
+        <ul style="list-style: none; padding: 0; display: inline-flex; align-items: center; gap: 10px;">
+            <li><a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">Home</a></li>
+            <li style="color: white;">|</li>
+            <li><a href="about.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
+            <li style="color: white;">|</li>
+            <li class="dropdown">
+				<a class="dropdown-toggle" href="gallery.html" id="galleryDrop" data-bs-toggle="dropdown" 
+				style="color: white; text-decoration: none; font-weight: bold;">Gallery</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="gallery.html">Gallery Top</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="gallery.html#white">"White" Arrangements</a></li>
+					<li><a class="dropdown-item" href="gallery.html#color">"Colorful" Arrangements</a></li>
+					<li><a class="dropdown-item" href="gallery.html#dog">Something... special!?</a></li>
+				</ul>
+			</li>
+            <li style="color: white;">|</li>
+            <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+        </ul>
+    </nav>
+	</header>
+
+    <main class="container my-5 text-center">
+        <h2 class="mb-5">Some of the "Light-colored/White" Arrangements!</h2>
+        <h2 id="white"></h2>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#sera">
+                <img src="images/Seraphim.png" class="card-img-top rounded" alt="Seraphim flower bouquet">
+				</a>
+                <div class="card-body"><h5>Seraphim, an angelic arrangement of white roses and hydrangeas~</h5></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#pow">
+                <img src="images/PowderPuff.png" class="card-img-top rounded" alt="Powder Puff flower bouquet">
+				</a>
+                <div class="card-body"><h5>Powder Puff, a simply elegant arrangement featuring white hydrangeas and white carnations... </h5></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#nouv">
+                <img src="images/Nouveau.png" class="card-img-top rounded" alt="Nouveau flower bouquet">
+				</a>
+                <div class="card-body"><h5>Nouveau, a classic arrangement of white roses and babies breath!</h5></div>
+                </div>
+            </div>
+        </div>
+		
+		<hr class="my-5">
+		<h2 id="weddings" class="mb-5">Some of our more "Colorful" Arrangements~</h2>
+		<h2 id="color"></h2>
+		<div class="row">
+		
+			<div class="col-md-4 mb-4">
+				<div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#daph">
+                <img src="images/Daphne.png" class="card-img-top rounded" alt="Daphne flower Bouquet">
+				</a>
+                <div class="card-body"><h5>Daphne, a soft and luxurious arrangement of purple roses and white hydrangeas.</h5></div>
+				</div>
+			</div>
+		
+			<div class="col-md-4 mb-4">
+				<div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#senti">
+				<img src="images/SentimentalValentine.png" class="card-img-top rounded" alt="Sentimental Valentine flower Bouquet">
+				</a>
+				<div class="card-body"><h5>Sentimental Valentine, a valentine’s bouquet filled with a sweet-meets-romantic mix to show them just how sentimental you can be ❤❤❤</h5></div>
+				</div>
+			</div>
+		
+			<div class="col-md-4 mb-4">
+				<div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#ameth">
+                <img src="images/EnchantingAmethyst.png" class="card-img-top rounded" alt="Enchanting Amethyst flower Bouquet (fun fact, amethyst is my favorite jewel/gemstone!)">
+				</a>
+                <div class="card-body"><h5>Enchanting Amethyst, show your love and appreciation through a gorgeous display of ivory, lavender, and plum blooms.</h5></div>
+				</div>
+			</div>
+		</div>
+	
+		<hr class="my-5">
+		<h2 id="birthdays" class="mb-5">Some special... "Canine" Arrangements...</h2>
+		<h2 id="dog"></h2>
+		<div class="row">
+	
+			<div class="col-md-4 mb-4">
+				<div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#party">
+                <img src="images/PartyPooch.png" class="card-img-top rounded" alt="DOGGGGG">
+				</a>
+                <div class="card-body"><h5>Party Pooch, our doggone adorable floral pup is hand-designed in a keepsake ceramic vase decorated with polka dots and “Celebrate” in gold script.</h5></div>
+				</div>
+			</div>
+		
+			<div class="col-md-4 mb-4">
+				<div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#preci">
+                <img src="images/PreciousPup.png" class="card-img-top rounded" alt="who doesnt love dogs?">
+				</a>
+                <div class="card-body"><h5>Precious Pup, crafted from white carnations, with sweet pink blooms all around, this canine creation is designed in a dog bed basket!</h5></div>
+				</div>
+			</div>
+		
+			<div class="col-md-4 mb-4">
+				<div class="card shadow-sm border-0">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#dogable">
+                <img src="images/A-Dog-Able.png" class="card-img-top rounded" alt="...how adogable?!">
+				</a>
+                <div class="card-body"><h5>A-Dog-Able in a basket, this one-sided 3D arrangement has white carnations, hot pink mini carnations, yellow daisy poms, green button poms, and more!</h5></div>
+				</div>
+			</div>
+		</div>
+
+    <div class="mt-5 pt-5 border-top text-center">
+		<p class="text-muted" style="font-size: 1.2rem;"><i>
+		<img src="images/snow-pink.gif" 
+         alt="Wind-swaying flowers." 
+         style="width: 250px; height: auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
+         class="mb-3">
+		"Always blooming for you." (Note: The animated flowers is NOT part of the shop.)</i></p>
+	</div>
+	
+    </main>
+
+
+<div class="modal fade" id="sera" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/Seraphim.png" class="img-fluid w-100" alt="Seraphim in focus!">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="pow" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/PowderPuff.png" class="img-fluid w-100" alt="Powder Puff in focus!">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="nouv" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/Nouveau.png" class="img-fluid w-100" alt="Nouveau in focus!">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="daph" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/Daphne.png" class="img-fluid w-100" alt="Daphne in focus~">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="senti" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/SentimentalValentine.png" class="img-fluid w-100" alt="Sentimental Valentine in focus~">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ameth" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/EnchantingAmethyst.png" class="img-fluid w-100" alt="Enchanting Amethyst in focus~">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="party" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/PartyPooch.png" class="img-fluid w-100" alt="Party Pooch in focus, wan wan!">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="preci" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/PreciousPup.png" class="img-fluid w-100" alt="Precious Pup in focus, arf arf!">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="dogable" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="images/A-Dog-Able.png" class="img-fluid w-100" alt="A-Dog-Able in focus, bark bark!">
+                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+	
+        <p>Developed by: <strong>Carrot!!</strong></p>
+		<div class="site-map">
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="gallery.html">Gallery</a> | 
+        <a href="contact.html">Contact</a>
+		</div>
+		<p><i>Note: This is used merely for a school project, "Flowerama in Plano" already has a site of their own, and this should and must NOT replace that in any way.</i></p>
+		
+    </footer>
+	
+	<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
+</html>
